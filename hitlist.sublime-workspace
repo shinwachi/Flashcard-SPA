@@ -1,0 +1,708 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"know",
+				"knowsWord"
+			],
+			[
+				"rep",
+				"replaceWith"
+			],
+			[
+				"in",
+				"indicator"
+			],
+			[
+				"kn",
+				"knowsWord"
+			],
+			[
+				"user",
+				"userVocabIndicator"
+			],
+			[
+				"d",
+				"displayPrevious"
+			],
+			[
+				"to",
+				"toggleDef"
+			],
+			[
+				"use",
+				"userVocab"
+			],
+			[
+				"chec",
+				"checkAndAddToUserVocab"
+			],
+			[
+				"_wor",
+				"_wordIdx"
+			],
+			[
+				"add",
+				"addVisitToUserVocab"
+			],
+			[
+				"found",
+				"foundIdx"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"disp",
+				"displayNext"
+			],
+			[
+				"dis",
+				"displayNext"
+			],
+			[
+				"di",
+				"displayNext"
+			],
+			[
+				"cu",
+				"currentEntryIdx"
+			],
+			[
+				"get",
+				"getWord"
+			],
+			[
+				"json",
+				"jsonData"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"show",
+				"showDef"
+			],
+			[
+				"hide",
+				"hideDef"
+			],
+			[
+				"js",
+				"jsonDataOriginal"
+			],
+			[
+				"shu",
+				"shuffleArray"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"selec",
+				"selectAll"
+			],
+			[
+				"w",
+				"w"
+			],
+			[
+				"sort",
+				"sorted_tuples"
+			],
+			[
+				"ha",
+				"hashtag"
+			],
+			[
+				"hash",
+				"hashTagTally"
+			],
+			[
+				"hi",
+				"high_score"
+			],
+			[
+				"hih",
+				"high_state"
+			],
+			[
+				"high",
+				"high_score"
+			],
+			[
+				"sta",
+				"stateLoc"
+			],
+			[
+				"state",
+				"stateScore"
+			],
+			[
+				"stat",
+				"stateConvert"
+			],
+			[
+				"term",
+				"termCount"
+			],
+			[
+				"sco",
+				"scorelist"
+			],
+			[
+				"un",
+				"unscoredTerms"
+			],
+			[
+				"_u",
+				"_unscoredWord"
+			],
+			[
+				"sent",
+				"sentiment_score"
+			],
+			[
+				"split",
+				"splitText"
+			],
+			[
+				"sm",
+				"SMILES"
+			],
+			[
+				"row",
+				"rowDict"
+			],
+			[
+				"colgroup",
+				"colgroupdef"
+			],
+			[
+				"tran",
+				"transDepth"
+			],
+			[
+				"loca",
+				"locationDepth"
+			],
+			[
+				"locat",
+				"locationWidth"
+			],
+			[
+				"pl",
+				"placeDrawable"
+			],
+			[
+				"number",
+				"numberOfLots"
+			],
+			[
+				"draw",
+				"drawable"
+			],
+			[
+				"buil",
+				"buildingLocationDepth"
+			],
+			[
+				"work",
+				"working_dirctory"
+			],
+			[
+				"result",
+				"result_dir"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 876,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/FlashCard.js",
+			"settings":
+			{
+				"buffer_size": 5320,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// array shuffling function: fisher-yates\n	function shuffleArray(array) {\n	    for (var i = array.length - 1; i > 0; i--) {\n	        var j = Math.floor(Math.random() * (i + 1));\n	        var temp = array[i];\n	        array[i] = array[j];\n	        array[j] = temp;\n	    }\n	    return array;\n	} // end shuffleArray",
+			"file": "js/shuffleArray.js",
+			"file_size": 312,
+			"file_write_time": 1370139413000000,
+			"settings":
+			{
+				"buffer_size": 312,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/user.js",
+			"settings":
+			{
+				"buffer_size": 2308,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "291836",
+			"settings":
+			{
+				"buffer_size": 6,
+				"line_ending": "Unix",
+				"name": "291836"
+			}
+		},
+		{
+			"file": "hitlist3.txt",
+			"settings":
+			{
+				"buffer_size": 1124284,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/shin/Dropbox/fei_shin_folder/gre_hitlist/hitlist.json",
+		"/Users/shin/Downloads/hitlist3.txt",
+		"/Users/shin/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/shin/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/shin/Downloads/d3project/food.csv",
+		"/Users/shin/Downloads/datasciAssignments/datasci_course_materials/assignment1/print.py",
+		"/Users/shin/Downloads/PEP-FOLD_R24802885443926/job.xsl",
+		"/Users/shin/Downloads/peptideProject/ProcessedData/LMGP08010003.pdb",
+		"/Users/shin/Downloads/peptideProject/ProcessedData/LMGP08010003.b.pdb",
+		"/Users/shin/Downloads/peptideProject/1IWQ.pdb",
+		"/Users/shin/Downloads/cocos2d-iphone-2.0/README.md",
+		"/Users/shin/Downloads/fei flow test for shin.pdf",
+		"/Users/shin/Downloads/Settings.textexpander",
+		"/Users/shin/Downloads/ex1/ex1/plotData.m",
+		"/Users/shin/Downloads/ex1/ex1/submit.m",
+		"/Applications/eclipse helios/Eclipse.app/Contents/MacOS/eclipse.ini",
+		"/Users/shin/Downloads/Staff Manager/Staff Manager/RolesTVC.h",
+		"/Users/shin/Downloads/Staff Manager/Staff Manager/RolesTVC.m",
+		"/Users/shin/Downloads/something/untitled.html",
+		"/Users/shin/Documents/Cocoa/DelegatePractice/AppController.m",
+		"/Users/shin/Dropbox/workspace (1)/GeneralPython/src/data_processing/120312_PNE_dataset_upload_data_processing/120312a_dataset_info.py",
+		"/Users/shin/Documents/cocos2d-iphone-1.0.1/README.mdown",
+		"/Volumes/Tiled 0.8.1/README.md",
+		"/Users/shin/Downloads/test_Resources/test_hype_generated_script.js",
+		"/Users/shin/Downloads/Untitled_Resources/HYPE.js",
+		"/Users/shin/Downloads/Untitled_Resources/untitled_hype_generated_script.js",
+		"/Users/shin/Downloads/ÉAÉZÉçÉâëÃëÄÅÙètâƒÉZÉbÉg/ÉAÉZÉçÉâëÃëÄëSêeîzíu_ç∂3.vmd",
+		"/Users/shin/Downloads/137_tame1/AttributiveCellTableModel.java",
+		"/Users/shin/Downloads/137_tame1/DefaultCellAttribute.java",
+		"/Users/shin/Downloads/137_tame1/CellAttribute.java",
+		"/Users/shin/Downloads/137_tame1/CellFont.java",
+		"/Users/shin/Downloads/137_tame1/CellSpan.java",
+		"/Users/shin/Downloads/137_tame1/MultiSpanCellTable.java",
+		"/Users/shin/Downloads/137_tame1/MultiSpanCellTableUI.java",
+		"/Users/shin/Downloads/137_tame1/ColoredCell.java",
+		"/Users/shin/Downloads/137_tame1/AttributiveCellRenderer.java",
+		"/Users/shin/Downloads/137_tame1/TextColorChooser.java",
+		"/Users/shin/Downloads/WebKit-r107449/Source/JavaScriptCore/config.h",
+		"/Users/shin/workspace/learnProlog/test.pl",
+		"/Users/shin/Documents/Processing/sketch_jan21a_buildings/sketch_jan21a_buildings.pde",
+		"/Users/shin/Dropbox/workspace (1)/Rworks/dda_paralel.r",
+		"/Users/shin/Dropbox/workspace (1)/Rworks/dda_serial.r",
+		"/Users/shin/Desktop/temp/jsonresponse/jsonresponse.css",
+		"/Users/shin/Desktop/temp/jsonresponse/jsonresponse.js",
+		"/Users/shin/Desktop/temp/jsonresponse/index.html",
+		"/Users/shin/Desktop/temp/gumball/sales.json",
+		"/Users/shin/Desktop/temp/gumball/codemagnet.js",
+		"/Users/shin/Desktop/webvilleTunes.html"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"saveUser",
+			"main",
+			"vocabInd",
+			"checkAnd",
+			"addVisit",
+			"obser",
+			"vocabIndexOf",
+			"userVocab",
+			"userVocabIndexOf",
+			"isWordcharacter",
+			"debris",
+			"));\n",
+			".click(function(){\n					 // 	showDef();\n					 // });",
+			"});\n",
+			" '",
+			"^[例近反]",
+			"^[^【\\#]",
+			"^[a-z]+$\\n【",
+			"^[a-z]+$",
+			"^[A-Z]...*",
+			"List[^\\#]*",
+			"\\[.*\\][^\\n]*",
+			"Unit \\d+\\n[^#]+",
+			"List \\d+\\n[^#]+",
+			"Unit \\d+\\n[\\nA-Z\\s]+",
+			"\\n\\[.*\\]",
+			"\\n[a-z]+\\s*\\[.*",
+			"\n\n",
+			"\nMade By Jason & Franklin. This Document Is Strictly Prohibited For Commercial Purposes Without Authorization.",
+			"\n本文档由陈琦和周书林共同制作完成。未经作者授权,严禁将此文档用于商业用途。",
+			"\n           本文档由陈琦和周书林共同制作完成。未经作者授权,严禁将此文档用于商业用途。",
+			"\n",
+			"￼",
+			"Unit",
+			"select",
+			"hashtags\\\":\\[\\{",
+			"hashtags\\\":\\[",
+			"hashtags\\\":\\[\\\"",
+			"hashtags",
+			"hastag",
+			"hastags",
+			"has",
+			"\\#",
+			" ",
+			",",
+			"\\t",
+			"avai",
+			"order now",
+			"List\\(",
+			"nil",
+			"nil, Zulu, Rex",
+			"List(nil, Zulu, Rex)",
+			"//<",
+			" ",
+			";",
+			"=.*",
+			"=",
+			"public",
+			"NumericBinnerNode",
+			"pcg",
+			"sfg",
+			"\\\\",
+			"Signal",
+			"dy",
+			"xx",
+			"dx",
+			"Template",
+			"MasterViewController",
+			"AppDelegate",
+			"Template",
+			"MasterViewController",
+			"APPDelegate",
+			"@",
+			"\\d\\d",
+			"1SCCCP_1SDMSO",
+			"1PDMSO_1NDMSO",
+			"1PCCCP_1NCCCP",
+			"-",
+			"buildingHeight",
+			"result_dir",
+			"calctime",
+			"calctime[[",
+			"calctime",
+			"filenames[\"qval_matrix\"]",
+			"filenames[\"p0_array\"]",
+			"filenames[\"pvalue_matrix\"]",
+			"filenames[\"z_matrix\"]",
+			"filenames[\"row_names\"]",
+			"filenames[\"calctime\"]",
+			"filenames[\"sample_data_factors\"]",
+			"filenames[\"sample_data\"]",
+			"filenames[\"reference_dir\"]",
+			"\"]",
+			"=",
+			"calctime[",
+			"save(calctime, file=\"calctime.RData\")",
+			"request2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								807,
+								807
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/FlashCard.js",
+					"settings":
+					{
+						"buffer_size": 5320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4764,
+								4764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2115.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/shuffleArray.js",
+					"settings":
+					{
+						"buffer_size": 312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/user.js",
+					"settings":
+					{
+						"buffer_size": 2308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494,
+								494
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 6,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6,
+								6
+							]
+						],
+						"settings":
+						{
+							"auto_name": "291836",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "hitlist3.txt",
+					"settings":
+					{
+						"buffer_size": 1124284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685253,
+								685253
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

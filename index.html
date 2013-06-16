@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+<meta charset="utf-8"> 
+
+<script type="text/javascript" src="d3/d3.v3.js"></script>
+<script type="text/javascript" src="jquery/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<!-- custom scripts -->
+<script type="text/javascript" src="js/user.js"></script>
+<script type="text/javascript" src="js/shuffleArray.js"></script>
+<script type="text/javascript" src="js/FlashCard.js"></script>
+<!-- uncomment to enable jquery-ui theme
+<link href="css/jquery-ui-1.10.3.custom.css" type="text/css" rel="stylesheet" />
+-->
+<title>flashcard</title>
+
+</head>
+
+<body>
+	<div class="row">
+		<div class="span12">
+			<br>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span1">
+			<p class="text-center">
+				
+			</p>
+		</div>
+		<div class="span10">Progress:<div id="indexDisplay"></div></div>
+	</div>
+	<div class="row">
+		<div class="span1"></div>
+		<div class="span12">
+			<div id="progressBar">
+				<div class="progress">
+					<div class="bar" style="width: 0%" id="idxProgress"></div>
+					<div class="bar bar-success" style="width: 0%" id="knownPct"></div> 
+					<div class="bar bar-danger" style="width: 0%" id="unknownPct"></div> 
+				</div>
+			</div>
+		</div>
+		<div class="span1"></div>
+	</div>
+
+
+<div class = "row">
+	<div class="span12 offset1">
+
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a href="#" id='cardViewTab'>Cards</a>
+			</li>
+			<li>
+				<a href="#" id='userViewTab'>User</a>
+			</li>
+
+		</ul>
+
+		<div class="row mainView" id="cardView">
+			
+			<div class="span10">
+				<div class="row">
+					<div class="span10">
+						<div id="controls"></div>
+						<br>
+					</div>
+					
+				</div>
+
+				
+				<div class="row">
+					<div class="span9">
+						<div class="well">
+							<div id="entry">shuffling</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="span2">
+				<div class="row">
+				
+					<div class="well">
+						Show: 
+						<div class="control-group">
+
+							<div class="checkbox">
+								<input type="checkbox" id="filterUnvisited"><i class="icon-filter"></i><span class="label">Unvisited</span></input>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="filterVisited"><i class="icon-filter"></i><span class="label label-info">Visited</span></input>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="filterKnown"><i class="icon-filter"></i><span class="label label-success">Known</span></input>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" id="filterDontKnow"><i class="icon-filter"></i><span class="label label-important">Unknown</span></input>
+							</div>
+							<br>
+							<p>
+							<button class="btn" type="button" id="checkAllFilter">Check Filters</button>
+							</p>
+						</div>
+						<br><br>
+						<div class="control-group">
+							<div class="checkbox">
+								<input type="checkbox" id="showDefinition">
+									<i class="icon-info-sign"></i><span class="label label-info">Show Def</span>
+								</input>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end cardView -->
+
+
+		<div class="row mainView" id="userInfoView">
+			<div class="span12">
+				user information (triple click to select text):
+				<div class="well">
+					<div id="userTextInfo"> <!-- place to display user information as text -->
+					</div>
+				</div>
+			</div>
+		</div> 
+
+
+	</div>
+</div>
+
+	<script type="text/javascript">
+	
+
+
+	$( document ).ready(function(){
+
+	checkAllFilter();
+
+		console.log("starting v 2.0");
+		$.getJSON("hitlist.json", function(jsonDataOriginal) {
+			
+			flashCard(jsonDataOriginal);
+		});
+	})
+
+
+</script>
+
+
+
+</body>
+</html>
