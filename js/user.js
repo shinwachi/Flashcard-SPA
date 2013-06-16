@@ -21,6 +21,7 @@ User.prototype = {
 	getKnownUnknownCount:function(){
 		var known = 0;
 		var unknown = 0;
+        var important = 0;
 		for(var i=0, len = this.vocab.length; i < len ; i++) {
 			var v = this.knowsIdx(i);
 			if(v == true){
@@ -28,8 +29,11 @@ User.prototype = {
 			}else if(v == false){
 				unknown++;
 			}
+            if(this.isImportantWordIdx(i) == true){
+                important++;
+            }
 		};
-		return {"known":known, "unknown":unknown};
+		return {"known":known, "unknown":unknown, "important":important};
 	},
 
 	checkAndAddToUserVocab:function (_word){
@@ -37,7 +41,7 @@ User.prototype = {
 		//console.log(foundIdx);
 		if (foundIdx == -1){
 			//console.log("adding");
-			this.vocab.push({word:_word, visit:[]});
+			this.vocab.push({word:_word, visit:[], important:null});
 			//console.log(this.vocab);
 			return this.vocabIndexOf(_word);
 		}
@@ -97,6 +101,47 @@ User.prototype = {
 			}
 		}
 		return null; 
-	}
+	},
+
+    isImportantWordIdx:function(foundIdx){
+//        console.log("isImportantWordIdx: " + foundIdx);
+        if(foundIdx < 0){
+            return false;
+        }
+
+
+        if (('important' in this.vocab[foundIdx]) == false )  {
+            return false;
+        }else if(this.vocab[foundIdx].important == null){
+            return false;
+        }else{
+            return true;
+        }
+    },
+
+    isImportantWord:function(word){
+        // finds out if the word is marked as important or not
+        var foundIdx = this.vocabIndexOf(word);
+        return this.isImportantWordIdx(foundIdx);
+    },
+
+    toggleImportantWord:function(){
+
+        var word = jsonData[currentEntryIdx].word;
+        console.log("toggling important word: " + word);
+        var foundIdx = this.vocabIndexOf(word);
+        if(('important' in this.vocab[foundIdx]) == false || this.vocab[foundIdx].important == null){
+            console.log("unimportant --> important");
+            this.vocab[foundIdx].important = true;
+        }else{
+            console.log("important --> unimporant");
+            this.vocab[foundIdx].important = null;
+        }
+    }
+
+//    getImportantWordCount:function(){
+//    }
 
 }; // end User.prototype
+
+

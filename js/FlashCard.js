@@ -127,9 +127,10 @@ function setProgressBar(){
 	$('#idxProgress').attr('style', "width: "+remainingVisited+"%");
     
 	$('#indexDisplay').text("Idx:"+currentEntryIdx + "/" + jsonData.length
-		+ " visited:" + user.getVisitedCount()
-		+ " known:" + knownUnknown.known
-		+ " unknown:" + knownUnknown.unknown);
+		+ " visited: " + user.getVisitedCount()
+		+ " known: " + knownUnknown.known
+		+ " unknown: " + knownUnknown.unknown
+        + " important: " + knownUnknown.important);
 	console.log(progressPct+' '+$('#idxProgress').attr('style'));
 	console.log(progressPct+' '+$('#knownPct').attr('style'));
 
@@ -140,6 +141,7 @@ function checkAllFilter(){
 	$('#filterVisited')  .prop('checked', true);
 	$('#filterKnown')    .prop('checked', true);
 	$('#filterDontKnow') .prop('checked', true);
+    $('#filterImportant').prop('checked', true);
 }
 
 ///////////////////////////////////////////////////////////////////////
@@ -178,8 +180,13 @@ function displayUserKnowsWord(word){
 		indicator = '<span class="label">visit '+visits+'</span> <span class="badge badge-important">unknown</span>';
 	}
 
+    var importance = '';
+    if (user.isImportantWord(word)){
+        importance = '<span class="badge badge-warning"><i class="icon-star icon-white"></i></span>'  ;
+    };
+
 	//console.log('marking: ' + indicator);
-	$('#userVocabIndicator').replaceWith('<div id="userVocabIndicator">'+indicator+'</div>');
+	$('#userVocabIndicator').replaceWith('<div id="userVocabIndicator">'+indicator+importance+'</div>');
 
 } // end displayUserKnowsWord
 
@@ -210,6 +217,7 @@ function skipToPrevNext(iterFunct){
 	var filterVisited   = $('#filterVisited').prop('checked');
 	var filterKnown     = $('#filterKnown').prop('checked');
 	var filterDontKnow  = $('#filterDontKnow').prop('checked');
+    var filterImportant = $('#filterImportant').prop('checked');
 
 
 	var d = getCurrentEntry();
@@ -234,7 +242,7 @@ function skipToPrevNext(iterFunct){
 		}else{
 			d = getCurrentEntry();
 			var userVocabIdx = user.vocabIndexOf(d.word);
-			console.log("userVocabIdx"+userVocabIdx);
+//			console.log("userVocabIdx"+userVocabIdx);
 			var userKnows = false;
 			if(userVocabIdx >= 0){ // mean it is in the user vocab
 				if(filterVisited){
@@ -248,11 +256,20 @@ function skipToPrevNext(iterFunct){
 						continueFlag = false;
 					}
 				}
+
+                if(filterImportant=true){
+
+                    if(user.isImportantWordIdx(userVocabIdx)==true){
+                        continueFlag=false;
+                    }
+                }
 			}else{
 				if(filterUnvisited==true){
 					continueFlag = false;
 				}
-			}
+
+
+            }
 		}
 		skipped++;
 	}
@@ -408,6 +425,13 @@ $('.nav-tabs > li > a').click(function(event){
 	    	display()
 	    	showDef();
 		});
+
+    addControlWithKeyShortcut('#controls', 'toggleImportance', '<i class="icon-star icon-white"></i>important (s-tar)', 'btn-warning', 'S',
+        function(event){
+            user.toggleImportantWord();
+            display();
+            showDef();
+        });
 
 
 	// handle shortcut keys
