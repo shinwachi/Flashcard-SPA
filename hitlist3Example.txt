@@ -1,0 +1,52 @@
+
+#WORD:abandon 
+【考法 1】 n. 放纵: carefree, freedom from constraint 
+【例】addedspicestothestewwithcompleteabandon 肆无忌惮地向炖菜里面加调料
+【近】 unconstraint, uninhibitedness, unrestraint
+【考法 2】 v. 放纵: to give (oneself) over unrestrainedly 
+【例】abandononeselftoemotion感情用事,abandonherselftoalifeofcompleteidleness 放纵自己过着闲 散的生活
+【近】 indulge, surrender, give up
+【考法 3】 v. 放弃: to withdraw from often in the face of danger or encroachment
+【例】 abandon the ship/homes 弃船,离家
+【反】 salvage 救援
+【考法 4】 v. 停止做某事: to put an end to (something planned or previously agreed to)
+【例】 the bad weather forced NASA to abandon the launch 坏天气迫使 NASA 停止了发射
+【近】 abort, drop, repeal, rescind, revoke, call off
+【反】 keep, continue, maintain, carry on 继续
+#WORD:abase 
+【考法 1】 v. 降低(地位、职位、威望或尊严): to lower in rank, office, prestige, or esteem
+【例】 was unwilling to abase himself by pleading guilty to a crime that he did not commit 不愿意屈就自己去承 认一个莫须有的罪名
+【近】 debauch, degrade, profane, vitiate, discredit, foul, smirch, take down
+【反】 elevate, ennoble, uplift, aggrandize, canonize, deify, exalt 使高贵,使有声望
+#WORD:abash 
+【考法 1】 vt. 使尴尬,使羞愧: to destroy the self-possession or self-confidence of ,disconcert, embarrass 
+【例】 Nothing could abash him. 没有什么可以使他感到难堪。
+【近】 discomfit, disconcert, discountenance, faze, fluster, nonplus, mortify
+【反】 embolden使大胆
+#WORD:abate 
+【考法 1】 v. 减轻(程度或者强度): to reduce in degree or intensity
+【例】 abate his rage/pain 平息他的愤怒/减轻痛苦
+【近】 moderate, recede, subside, remit, wane, die (away or down or out),let up, phase down, ratchet (down), taper off
+【反】 intensify
+【考法 2】 v. 减少(数量或者降低价值): to reduce in amount or value
+【例】 abate a tax 降低税收
+【近】 de-escalate, deplete, downscale, dwindle,
+【反】 augment, promote 增加
+【考法 3】 v. 停止,撤销: to put an end to
+【例】 abate a nuisance 停止伤害
+【近】 abrogate, annul, invalidate, nullify, rescind, vacate
+#WORD:abbreviate 
+【考法 1】 v. 缩写,缩短: to make briefer
+【例】 abbreviate the word “building” as “bldg.” 将“building”缩写作“bldg” 
+【近】 abridge, curtail, cut back, syncopate,truncate
+【反】 extend, protract, elongate, lengthen, prolong 延长
+#WORD:abdicate 
+【考法 1】 v. 正式放弃(权力、责任): to renounce a throne,to relinquish (power or responsibility) formally 
+【例】 abdicate the throne/crown 退位
+【近】 cede, relinquish, renounce, resign, step down (from)
+【反】 constitute, assume, usurp 任命,承担,篡位
+#WORD:aberrant 
+【考法 1】 adj. 异常的,非常规的: deviating from the usual or natural type
+【例】 This behavior might be aberrant enough to draw attention. 这样的行为已经异常得足以引起人们的注意。 
+【近】 abnormal, anomalous, peculiar, singular, unwonted,uncustomary
+【反】 normal, natural, regular, standard, typical 正常的,标准典型的
