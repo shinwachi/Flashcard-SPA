@@ -1,3 +1,7 @@
+// user.js
+// Shin Wachi 2013
+// MIT License (http://opensource.org/licenses/MIT)
+
 // keeps track of user interaction with words, including visits and recalls
 function User() {
 	this.username = null,

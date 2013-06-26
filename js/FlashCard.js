@@ -1,3 +1,7 @@
+// FlashCard.js
+// Shin Wachi 2013
+// MIT License (http://opensource.org/licenses/MIT)
+
 // main function: flashCard()
 
 
@@ -32,22 +36,7 @@ function restoreUser(){
 
 function displayUserJson(){
 	$("#userTextInfo").text(JSON.stringify(user));
-	// $("#userTextInfo").focus(function(){
-	// 	var $this = $(this);
-	// 	$this.select();
-	// 	window.setTimeout(function() {
- //        $this.select();
- //    }, 1);
 
-    // Work around WebKit's little problem
- //    function mouseUpHandler() {
- //        // Prevent further mouseup intervention
- //        $this.off("mouseup", mouseUpHandler);
- //        return false;
- //    }
-
- //    $this.mouseup(mouseUpHandler);
-	// });
 
 
 }
@@ -383,13 +372,13 @@ $('.nav-tabs > li > a').click(function(event){
 
 	shuffleEntryArray(jsonDataOriginal);
 
-	displayFirst()
+	displayFirst();
 	// displayNext(); // go to first card
 	hideDef(); // hide the definition from the user
 
 	$('#showDefinition').change(function(){
 		showDefAlways(this.checked);
-	})
+	});
 	
 	$('#checkAllFilter').button().click(function(event){
 		checkAllFilter();
